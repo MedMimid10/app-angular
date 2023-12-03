@@ -1,0 +1,13 @@
+<div class="d-flex" id="wrapper">
+  <div class="border-end bg-white" id="sidebar-wrapper">
+    <div class="sidebar-heading border-bottom bg-primary text-white">Start Bootstrap</div>
+    <div class="list-group list-group-flush">
+      <a routerLink="/sidebar/dashboard" routerLinkActive="active-link" class="list-group-item list-group-item-action list-group-item-light p-3" id="dashboardLink">Dashboard</a>
+      <a routerLink="/sidebar/DataTable" routerLinkActive="active-link" class="list-group-item list-group-item-action list-group-item-light p-3" id="DataTableLink">DataTable</a>
+      <a routerLink="/sidebar/Upload-files" routerLinkActive="active-link" class="list-group-item list-group-item-action list-group-item-light p-3" id="UploadFilesLink">Upload files</a>
+    </div>
+  </div>
+  <div id="page-content-wrapper">
+    <router-outlet></router-outlet>
+  </div>
+</div>

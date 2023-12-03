@@ -1,0 +1,46 @@
+<div class="container-fluid">
+  <!-- Bar Chart -->
+  <div class="row justify-content-center">
+    <div class="col-md-8 mt-3">
+      <h3 class="text-center fw-bold fs-2">Bar Chart</h3>
+      <canvas baseChart
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [legend]="barChartLegend"
+              [type]="'bar'">
+      </canvas>
+    </div>
+  </div>
+
+  <hr class="my-4">
+
+  <!-- Radar Chart -->
+  <div class="row justify-content-center">
+    <div class="col-md-8 mt-3">
+      <h3 class="text-center fw-bold fs-2">Radar Chart</h3>
+      <canvas baseChart
+              [datasets]="radarChartData"
+              [labels]="radarChartLabels"
+              [type]="'radar'">
+      </canvas>
+    </div>
+  </div>
+
+  <hr class="my-4">
+
+  <!-- Pie Chart -->
+  <div class="row justify-content-center">
+    <div class="col-md-8 mt-3 mb-3">
+      <h3 class="text-center fw-bold fs-2">Pie Chart</h3>
+      <canvas baseChart
+              [data]="pieChartData"
+              [labels]="pieChartLabels"
+              [type]="'pie'">
+      </canvas>
+    </div>
+  </div>
+</div>
+
+
+

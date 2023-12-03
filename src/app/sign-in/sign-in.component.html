@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row justify-content-center align-items-center" style="height: 100vh;">
+    <div class="col-md-4 col-sm-6 ">
+      <h1 class="d-flex justify-content-center fs-2 fw-bold">SIGN IN !</h1>
+      <div class="card shadow">
+        <div class="card-body">
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="text" name="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" name="password" class="form-control" placeholder="********">
+              <div class="text-end forget-pass mt-1">
+                <a href="" class="text-decoration-none">Forget Password?</a>
+              </div>
+            </div>
+            <div class="text-center">
+              <input type="submit" routerLink="/sidebar/dashboard" class="btn btn-primary" value="Login">
+            </div>
+          </form>
+          <div class="text-center mt-3">
+            Don't have an account? <a href="/sign-up" class="text-decoration-none">Sign Up here</a>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

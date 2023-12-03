@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 mt-5">
+      <h2 class=" text-center fw-bold fs-2">File Upload</h2>
+      <div class="card">
+        <div class="card-body">
+
+          <div class="file-upload">
+            <div class="d-flex flex-column align-items-center">
+              <label for="fileInput" class="btn btn-primary">
+                <input id="fileInput" type="file" (change)="onFileSelected($event)"/>
+              </label>
+              <button class="btn btn-success mt-3" (click)="onUpload()">Upload</button>
+            </div>
+
+            <div class="progress mt-4" *ngIf="progress >= 0 && progress <= 100">
+              <div class="progress-bar bg-info" [style.width.%]="progress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
